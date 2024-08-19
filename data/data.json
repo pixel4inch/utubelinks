@@ -1,0 +1,19 @@
+{
+    "CSS": [
+        {
+            "id": 1,
+            "utubelink": "https://www.youtube.com/embed/Jo6jqYOG5SM?si=yMy1t-8neTZeV2AE",
+            "title": "The Power of CSS When Combination of Not And Hover Selectors"
+        },
+        {
+            "id": 2,
+            "utubelink": "https://www.youtube.com/embed/UmzFk68Bwdk?si=WcOKPhyAzwu5oaOh",
+            "title": "Incredible scroll-based animations with CSS-only"
+        },
+        {
+            "id": 3,
+            "utubelink": "https://www.youtube.com/embed/pFtxR-O78sY?si=WIxqmXinOnGfkYVj",
+            "title": "Crazy Scroll Animation Using CSS Only"
+        }
+    ]
+}
