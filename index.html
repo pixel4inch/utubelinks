@@ -13,15 +13,19 @@
 
     <style>
         #tubevideo {
-            width: 225px;
+            width: 210px;
             height: 155px;
             border-radius: 10px;
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
         }
 
         .card {
-            width: 255px;
+            width: 240px;
             padding-top: 15px;
+        }
+
+        .card.done {
+            border: green solid 3px !important;
         }
     </style>
 
@@ -60,8 +64,8 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase fw-bolder" id="templates-tab" data-bs-toggle="tab"
-                        data-bs-target="#templates" type="button" role="tab" aria-controls="templates"
+                    <button class="nav-link text-uppercase fw-bolder" id="Templates-tab" data-bs-toggle="tab"
+                        data-bs-target="#Templates" type="button" role="tab" aria-controls="Templates"
                         aria-selected="false">
                         Templates
                     </button>
@@ -121,12 +125,20 @@
                 <div class="tab-pane" id="Works" role="tabpanel" aria-labelledby="Works-tab">
                     <h5 class="text-center fw-bolder my-3">WORKS </h5>
 
-                    <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="gsapblock"
+                    <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="workblock"
                         style="gap: 10px;">
 
 
 
 
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="Template" role="tabpanel" aria-labelledby="template-tab">
+                    <h5 class="text-center fw-bolder my-3">TEMPLATE </h5>
+                    <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="templateblock"
+                        style="gap: 10px;">
 
                     </div>
                 </div>
@@ -161,17 +173,30 @@
                     var output = '';
                     console.log(data);
                     if (data[category]) {
-                        $.each(data[category], function (key, value) {
+                        // Sort the data so that items with status 'done' come last
+                        var sortedData = Object.entries(data[category]).sort(function (a, b) {
+                            if (a[1].status === 'done' && b[1].status !== 'done') {
+                                return 1; // a is 'done', b is not 'done', a should come after b
+                            } else if (a[1].status !== 'done' && b[1].status === 'done') {
+                                return -1; // a is not 'done', b is 'done', a should come before b
+                            } else {
+                                return 0; // both have the same status, keep original order
+                            }
+                        });
+
+                        // Generate HTML from sorted data
+                        $.each(sortedData, function (index, entry) {
+                            var value = entry[1];
                             output += `
-                            <div class="card text-start" >
-                                    <iframe id="tubevideo" src="${value.utubelink}"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <div class="card-body px-0">
-                                        <h4 class="card-title" style="font-size: 12px;text-align: center; margin-bottom: 0;">${value.title}</h4>
-                                    </div>
-                                    </div>`;
+                        <div class="card text-start ${value.status}">
+                            <iframe id="tubevideo" src="${value.utubelink}"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body px-0">
+                                <h4 class="card-title" style="font-size: 12px;text-align: center; margin-bottom: 0;">${value.title}</h4>
+                            </div>
+                        </div>`;
                         });
                     } else {
                         output = "<p>Category not found.</p>";
@@ -187,7 +212,10 @@
             loadData('CSS', 'cssblock');
             loadData('java', 'javablock');
             loadData('gsap', 'gsapblock');
+            loadData('work', 'workblock');
+            loadData('templates', 'templateblock');
         });
+
     </script>
 
 </body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 100wh;
+            height: 100vh;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            background-color: azure;
+
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin: 0 auto;
+
+
+        }
+
+        li {
+            width: 150px;
+            height: 200px;
+            border: #ccc solid 1px;
+            border-radius: 20px;
+
+        }
+
+        li:nth-child(1) {
+            background: yellow;
+        }
+
+        li:nth-child(2) {
+            background: wheat;
+        }
+
+        li:nth-child(3) {
+            background: red;
+        }
+
+        li:nth-child(4) {
+            background: blue;
+        }
+
+        li:nth-child(5) {
+            background: green;
+        }
+
+        /* ul:hover li {
+            filter: opacity(0.2)
+        }
+
+        ul:hover li:hover {
+            filter: none;
+        }*/
+        ul:hover li:not(:hover) {
+            filter: opacity(0.2)
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+
+</body>
+
+</html>
