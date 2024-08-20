@@ -60,5 +60,13 @@
             "title": "Pure CSS 3D Animated Background Effects | Quick CSS Tips and Tricks",
             "status": ""
         }
+    ],
+    "GSAP": [
+        {
+            "id": 1,
+            "utubelink": "https://www.youtube.com/embed/Ecy-xsBqCcQ?si=2fjUhu0rI1tRUBgZ",
+            "title": "When Parallax Effect Met Horizontal Scroll (GSAP & ScrollTrigger)",
+            "status": ""
+        }
     ]
 }
