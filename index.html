@@ -15,6 +15,8 @@
         #tubevideo {
             width: 225px;
             height: 155px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
         }
 
         .card {
@@ -57,6 +59,19 @@
                         Gsap
                     </button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bolder" id="templates-tab" data-bs-toggle="tab"
+                        data-bs-target="#templates" type="button" role="tab" aria-controls="templates"
+                        aria-selected="false">
+                        Templates
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bolder" id="Works-tab" data-bs-toggle="tab"
+                        data-bs-target="#Works" type="button" role="tab" aria-controls="Works" aria-selected="false">
+                        Works
+                    </button>
+                </li>
             </ul>
 
             <!-- Tab panes -->
@@ -92,6 +107,19 @@
                 </div>
                 <div class="tab-pane" id="Gsap" role="tabpanel" aria-labelledby="Gsap-tab">
                     <h5 class="text-center fw-bolder my-3">GSAP VIDEO LINKS</h5>
+
+                    <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="gsapblock"
+                        style="gap: 10px;">
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="Works" role="tabpanel" aria-labelledby="Works-tab">
+                    <h5 class="text-center fw-bolder my-3">WORKS </h5>
 
                     <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="gsapblock"
                         style="gap: 10px;">
@@ -140,7 +168,7 @@
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    <div class="card-body">
+                                    <div class="card-body px-0">
                                         <h4 class="card-title" style="font-size: 12px;text-align: center; margin-bottom: 0;">${value.title}</h4>
                                     </div>
                                     </div>`;
