@@ -70,8 +70,16 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-uppercase fw-bolder" id="Works-tab" data-bs-toggle="tab"
+                    <button class="nav-link text-uppercase fw-bolder" id="Reactjs-tab" data-bs-toggle="tab"
                         data-bs-target="#Reactjs" type="button" role="tab" aria-controls="Works" aria-selected="false">
+                        React Js
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase fw-bolder" id="Works-tab" data-bs-toggle="tab"
+                        data-bs-target="#Webplaning" type="button" role="tab" aria-controls="Works"
+                        aria-selected="false">
                         React Js
                     </button>
                 </li>
@@ -112,10 +120,18 @@
                         style="gap: 10px;">
                     </div>
                 </div>
-                <!--TEMPLATE TAB PANEL-->
+                <!--REACT TAB PANEL-->
                 <div class="tab-pane" id="Reactjs" role="tabpanel" aria-labelledby="template-tab">
-                    <h5 class="text-center fw-bolder my-3">REACT JS VIDEO LINKSS </h5>
+                    <h5 class="text-center fw-bolder my-3">REACT JS VIDEO LINKS </h5>
                     <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="reactjsblock"
+                        style="gap: 10px;">
+                    </div>
+                </div>
+
+                <!--WEB PLANING TAB PANEL-->
+                <div class="tab-pane" id="Webplaning" role="tabpanel" aria-labelledby="template-tab">
+                    <h5 class="text-center fw-bolder my-3">WEB PLANING JS VIDEO </h5>
+                    <div class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="webplaningblock"
                         style="gap: 10px;">
                     </div>
                 </div>
@@ -183,6 +199,7 @@
             loadData('WORK', 'workblock');
             loadData('TEMPLATES', 'templateblock');
             loadData('REACTJS', 'reactjsblock');
+            loadData('WEBPLANING', 'webplaningblock')
         });
 
     </script>

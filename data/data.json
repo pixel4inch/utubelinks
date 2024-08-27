@@ -59,13 +59,37 @@
             "utubelink": "https://www.youtube.com/embed/icgbxlqf9Kc?si=OUR89Xn2hTRt6irh",
             "title": "Pure CSS 3D Animated Background Effects | Quick CSS Tips and Tricks",
             "status": ""
+        },
+        {
+            "id": 11,
+            "utubelink": "https://www.youtube.com/embed/icgbxlqf9Kc?si=OUR89Xn2hTRt6irh",
+            "title": "Variables in CSS - Level Up variables with Propery",
+            "status": ""
+        },
+        {
+            "id": 12,
+            "utubelink": "https://www.youtube.com/embed/Xc6G3oV24yE?si=bmt13aCa8L-N_Fbo",
+            "title": "Top 10 CSS One Liners That Will Blow Your Mind",
+            "status": ""
         }
     ],
     "GSAP": [
         {
             "id": 1,
-            "utubelink": "https://www.youtube.com/embed/Ecy-xsBqCcQ?si=2fjUhu0rI1tRUBgZ",
+            "utubelink": "https://www.youtube.com/embed/UwNERAV-OiU?si=Ol0Y__f9VgTNqqlO",
             "title": "When Parallax Effect Met Horizontal Scroll (GSAP & ScrollTrigger)",
+            "status": ""
+        },
+        {
+            "id": 2,
+            "utubelink": "https://www.youtube.com/embed/EDzJrYInOpY?si=ZKzHuNb9rAv1xBx1",
+            "title": "Make Scrolling Irresistible With This Image Reveal Animation",
+            "status": ""
+        },
+        {
+            "id": 3,
+            "utubelink": "https://www.youtube.com/embed/1iVRHjreOUI?si=pKPm6YOuOI-3Py5F",
+            "title": "Mind-Bending Scroll Animations With GSAP & ScrollTrigger",
             "status": ""
         }
     ]
