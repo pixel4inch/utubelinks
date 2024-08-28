@@ -63,6 +63,18 @@
         {
             "id": 11,
             "utubelink": "https://www.youtube.com/embed/icgbxlqf9Kc?si=OUR89Xn2hTRt6irh",
+            "title": "Pure CSS 3D Animated Background Effects | Quick CSS Tips and Tricks",
+            "status": ""
+        },
+        {
+            "id": 12,
+            "utubelink": "https://www.youtube.com/embed/r0sE2EtKV-c?si=RCwpq5eVhoZF9otz",
+            "title": "Scroll-Driven Animations Debugger 1.0.0",
+            "status": ""
+        },
+        {
+            "id": 11,
+            "utubelink": "https://www.youtube.com/embed/icgbxlqf9Kc?si=OUR89Xn2hTRt6irh",
             "title": "Variables in CSS - Level Up variables with Propery",
             "status": ""
         },
