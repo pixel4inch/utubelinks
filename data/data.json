@@ -104,5 +104,15 @@
             "title": "Mind-Bending Scroll Animations With GSAP & ScrollTrigger",
             "status": ""
         }
+    ],
+
+    "MORDENTEMPLATES": [
+        {
+            "id": 1,
+            "weblink": "https://www.blimp.gr/genres/",
+            "title": "THE BLIMP"
+           
+        }
+       
     ]
 }
