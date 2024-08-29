@@ -103,6 +103,12 @@
             "utubelink": "https://www.youtube.com/embed/1iVRHjreOUI?si=pKPm6YOuOI-3Py5F",
             "title": "Mind-Bending Scroll Animations With GSAP & ScrollTrigger",
             "status": ""
+        },
+        {
+            "id": 4,
+            "utubelink": "https://www.youtube.com/watch?v=du3AbBEcwgM",
+            "title": "Build An Awesome Modern Animation Website with HTML, CSS & JS | Master GSAP!",
+            "status": ""
         }
     ],
 
