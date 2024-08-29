@@ -112,6 +112,23 @@
             "weblink": "https://www.blimp.gr/genres/",
             "title": "THE BLIMP"
            
+        },
+        {
+            "id": 1,
+            "weblink": "https://cosmicshelter.com/",
+            "title": "COSMIC SHELTER"
+           
+        },
+        {
+            "id": 1,
+            "weblink": "https://www.accordion.net.au/",
+            "title": "ACCORDION"
+           
+        }, {
+            "id": 1,
+            "weblink": "https://makepill.com/en",
+            "title": "Make Pill"
+           
         }
        
     ]
