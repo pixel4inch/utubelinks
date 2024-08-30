@@ -106,12 +106,23 @@
         },
         {
             "id": 4,
-            "utubelink": "https://www.youtube.com/watch?v=du3AbBEcwgM",
+            "utubelink": "https://www.youtube.com/embed/du3AbBEcwgM?si=K5gTR6M7ArfTu__f",
             "title": "Build An Awesome Modern Animation Website with HTML, CSS & JS | Master GSAP!",
+            "status": ""
+        },
+        {
+            "id": 5,
+            "utubelink": "https://www.youtube.com/embed/CQHvWqYXI5s?si=0sFegaQPBRHtypbM",
+            "title": "GSAP ScrollTrigger Responsive Split Screen Pinning",
+            "status": ""
+        },
+        {
+            "id": 6,
+            "utubelink": "https://www.youtube.com/embed/SAcDG6oZfqo?si=bxiIGQhUdh-9Lc_D",
+            "title": "Creating a Stunning Image Gallery with GSAP and SVG Filters | Parallax Slider",
             "status": ""
         }
     ],
-
     "MORDENTEMPLATES": [
         {
             "id": 1,
@@ -127,11 +138,11 @@
             "id": 1,
             "weblink": "https://www.accordion.net.au/",
             "title": "ACCORDION"
-        }, {
+        },
+        {
             "id": 1,
             "weblink": "https://makepill.com/en",
             "title": "Make Pill"
         }
-       
     ]
 }
