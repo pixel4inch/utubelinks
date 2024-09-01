@@ -131,8 +131,8 @@
                 <!--WEB PLANING TAB PANEL-->
                 <div class="tab-pane" id="mordentemplates" role="tabpanel" aria-labelledby="template-tab">
                     <h5 class="text-center fw-bolder my-3">MORDEN TEMPLATES LINKS </h5>
-                    <ol class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap" id="mordentemplatesblock"
-                        style="gap: 10px;">
+                    <ol class="row mx-2 d-flex justify-content-start aling-items-center flex-wrap"
+                        id="mordentemplatesblock" style="gap: 10px;">
                     </ol>
                 </div>
             </div>
@@ -151,39 +151,39 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-       $(document).ready(function () {
-    function loadData(category, elementId) {
-        $.getJSON("data/data.json", function (data) {
-            var output = '';
+        $(document).ready(function () {
+            function loadData(category, elementId) {
+                $.getJSON("data/data.json", function (data) {
+                    var output = '';
 
-            if (category === "MORDENTEMPLATES") {
-                if (data[category]) {
-                    $.each(data[category], function (index, value) {
-                        output += `
+                    if (category === "MORDENTEMPLATES") {
+                        if (data[category]) {
+                            $.each(data[category], function (index, value) {
+                                output += `
                         <li class="modern-template">
                            <a href="${value.weblink}" target="_blank" class="template-link"> <p class="template-title">${value.title}</p></a>
                         </li>`;
-                    });
-                } else {
-                    output = "<p>Category not found.</p>";
-                }
-            } else {
-                if (data[category]) {
-                    // Sort the data so that items with status 'done' come last
-                    var sortedData = Object.entries(data[category]).sort(function (a, b) {
-                        if (a[1].status === 'done' && b[1].status !== 'done') {
-                            return 1; // a is 'done', b is not 'done', a should come after b
-                        } else if (a[1].status !== 'done' && b[1].status === 'done') {
-                            return -1; // a is not 'done', b is 'done', a should come before b
+                            });
                         } else {
-                            return 0; // both have the same status, keep original order
+                            output = "<p>Category not found.</p>";
                         }
-                    });
+                    } else {
+                        if (data[category]) {
+                            // Sort the data so that items with status 'done' come last
+                            var sortedData = Object.entries(data[category]).sort(function (a, b) {
+                                if (a[1].status === 'done' && b[1].status !== 'done') {
+                                    return 1; // a is 'done', b is not 'done', a should come after b
+                                } else if (a[1].status !== 'done' && b[1].status === 'done') {
+                                    return -1; // a is not 'done', b is 'done', a should come before b
+                                } else {
+                                    return 0; // both have the same status, keep original order
+                                }
+                            });
 
-                    // Generate HTML from sorted data
-                    $.each(sortedData, function (index, entry) {
-                        var value = entry[1];
-                        output += `
+                            // Generate HTML from sorted data
+                            $.each(sortedData, function (index, entry) {
+                                var value = entry[1];
+                                output += `
                         <div class="card text-start ${value.status}">
                             <iframe id="tubevideo" src="${value.utubelink}"
                                 title="YouTube video player" frameborder="0"
@@ -193,28 +193,28 @@
                                 <h4 class="card-title" style="font-size: 12px;text-align: center; margin-bottom: 0;">${value.title}</h4>
                             </div>
                         </div>`;
-                    });
-                } else {
-                    output = "<p>Category not found.</p>";
-                }
+                            });
+                        } else {
+                            output = "<p>Category not found.</p>";
+                        }
+                    }
+
+                    $('#' + elementId).html(output);
+                }).fail(function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error: " + textStatus + " - " + errorThrown);
+                    $('#' + elementId).html("<p>An error has occurred while loading the data.</p>");
+                });
             }
 
-            $('#' + elementId).html(output);
-        }).fail(function (jqXHR, textStatus, errorThrown) {
-            console.log("Error: " + textStatus + " - " + errorThrown);
-            $('#' + elementId).html("<p>An error has occurred while loading the data.</p>");
+            // Load data for each category
+            loadData('CSS', 'cssblock');
+            loadData('JAVA', 'javablock');
+            loadData('GSAP', 'gsapblock');
+            loadData('WORK', 'workblock');
+            loadData('TEMPLATES', 'templateblock');
+            loadData('REACTJS', 'reactjsblock');
+            loadData('MORDENTEMPLATES', 'mordentemplatesblock');
         });
-    }
-
-    // Load data for each category
-    loadData('CSS', 'cssblock');
-    loadData('JAVA', 'javablock');
-    loadData('GSAP', 'gsapblock');
-    loadData('WORK', 'workblock');
-    loadData('TEMPLATES', 'templateblock');
-    loadData('REACTJS', 'reactjsblock');
-    loadData('MORDENTEMPLATES', 'mordentemplatesblock');
-});
 
     </script>
 </body>
