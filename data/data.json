@@ -127,22 +127,70 @@
         {
             "id": 1,
             "weblink": "https://www.blimp.gr/genres/",
-            "title": "THE BLIMP"
+            "title": "THE BLIMP",
+            "description": ""
         },
         {
             "id": 1,
             "weblink": "https://cosmicshelter.com/",
-            "title": "COSMIC SHELTER"
+            "title": "COSMIC SHELTER",
+            "description": ""
         },
         {
             "id": 1,
             "weblink": "https://www.accordion.net.au/",
-            "title": "ACCORDION"
+            "title": "ACCORDION",
+            "description": ""
         },
         {
             "id": 1,
             "weblink": "https://makepill.com/en",
-            "title": "Make Pill"
+            "title": "Make Pill",
+            "description": ""
+        }
+    ],
+    "AITOOLS": [
+        {
+            "id": 1,
+            "weblink": "https://www.relume.io/",
+            "title": "Relume",
+            "description": "Websites designed &amp; built faster with AI, Use AI as your design ally, not as a replacement. Effortlessly generate sitemaps and wireframes for marketing websites in minutes."
+        },
+        {
+            "id": 2,
+            "weblink": "https://slater.app/",
+            "title": "Slater",
+            "description": "The scripting layer for Webflow powered by AI!"
+        },
+        {
+            "id": 3,
+            "weblink": "https://www.midjourney.com/",
+            "title": "Midjourney",
+            "description": "Imagine AI Art Generator"
+        },
+        {
+            "id": 4,
+            "weblink": "https://openai.com/index/dall-e-3/",
+            "title": "Chat GPT dall-E",
+            "description": "DALL·E 3 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate images."
+        },
+        {
+            "id": 5,
+            "weblink": "https://magnific.ai/",
+            "title": "Magnific",
+            "description": "The most advanced AI tech to achieve insanely high-res upscaling. Not only upscale, enhance & transform! Magnific can reimagine as many details as you wish guided by your own prompt and parameters!"
+        },
+        {
+            "id": 6,
+            "weblink": "https://www.framer.com/pricing/?utm_source=google&utm_medium=adwords&utm_campaign=Demand-Gen-Video-M-Aug2024-PUBLISH_&utm_source=google&utm_medium=cpc&utm_campaign=21544931734&utm_term=&utm_content=708030401904&utm_id=168476385071&gclid=CjwKCAjwodC2BhAHEiwAE67hJKkDyieUN6Ropsors0mrTSEV-IiNV7GyNP7RYLkqa5yi9mGLJXcQvRoCNFwQAvD_BwE",
+            "title": "framer",
+            "description": "Design beautiful responsive sites with an intuitive interface."
+        },
+        {
+            "id": 7,
+            "weblink": "https://www.dora.run/",
+            "title": "Dora",
+            "description": "3d Generate a site for any idea"
         }
     ]
 }
