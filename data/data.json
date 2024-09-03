@@ -192,5 +192,13 @@
             "title": "Dora",
             "description": "3d Generate a site for any idea"
         }
+    ],
+    "REACTJS": [
+        {
+            "id": 1,
+            "weblink": "https://www.youtube.com/embed/AZXYSlxj0vU?si=YE32Cl2fpRGe_BHI",
+            "title": "ReactJS | Modern Animated Website | OCHI DESIGN | Awwwarded Website Clone",
+            "description": ""
+        }
     ]
 }

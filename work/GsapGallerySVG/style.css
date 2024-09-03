@@ -22,8 +22,10 @@ body {
 .text-content {
     width: 100%;
     display: flex;
-    /* justify-content: center;
-        align-items: center; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
 }
 
 
@@ -40,6 +42,7 @@ body {
 .image-container {
     display: flex;
     padding: 0px 10%;
+    margin-top: 150px;
 
 }
 
